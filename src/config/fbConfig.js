@@ -1,11 +1,12 @@
 import firebase from 'firebase/app' //importing just d core/basic functionality
 import 'firebase/firestore' //importing the database
 import 'firebase/auth' //for authentications
+require('dotenv').config()
 
 
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyBgVKn9QdPe7lMI0bh_LGXcI3iMo3IacjA",
+    apiKey: process.env.SECRET_KEY,
     authDomain: "net-ninja-jobbosplan.firebaseapp.com",
     databaseURL: "https://net-ninja-jobbosplan.firebaseio.com",
     projectId: "net-ninja-jobbosplan",

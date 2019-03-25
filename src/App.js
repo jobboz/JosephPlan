@@ -6,6 +6,7 @@ import ProjectDetails from './component/projects/ProjectDetails';
 import SignIn from './component/auth/signIn';
 import SignUp from './component/auth/signUp';
 import CreateProject from './component/projects/CreateProject'
+require('dotenv').config()
 class App extends Component {
   render() {
     return (
